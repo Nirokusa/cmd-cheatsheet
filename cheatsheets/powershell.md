@@ -17,3 +17,4 @@
 - 何が起きる: パターン一致行を探す
 - 注意: `**` は環境によって挙動差あり。だめなら `Get-ChildItem -Recurse` と組み合わせる
 - 例: `Get-ChildItem -Recurse -Filter "*.log" | Select-String -Pattern "ERROR"`
+\n# setup note
