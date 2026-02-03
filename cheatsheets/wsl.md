@@ -17,3 +17,9 @@
 - 何が起きる: 圧縮
 - 注意: パスに注意
 - 例: `tar -xzf out.tgz -C ./dest`
+
+## 複数の作業ディレクトリを作成できる（git worktree）
+- コマンド: `git worktree add <path> <branch-or-commit>`
+- 何が起きる: 1つのリポジトリから複数の作業ツリー（別ディレクトリ）を同時に扱える
+- 注意: worktreeでチェックアウト中のブランチは通常の `git branch -d` で消せないことがある（先に `git worktree remove` / `prune` を検討）
+- 例: `git worktree add ../wt-feature feature/foo`
